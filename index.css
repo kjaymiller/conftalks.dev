@@ -1,5 +1,5 @@
 .backdrop {
 	background-image: url('https://s3-us-west-2.amazonaws.com/kjaymiller/images/chairs-conference-education-716281.jpg');
-	background-size: 100% contain;
+	background-size: contain 100%;
 	background-repeat: no-repeat;
 }
