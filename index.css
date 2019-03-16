@@ -3,7 +3,8 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+body { background-color: #333;
 
 div {
-	background-color: #ddd;
+	background-color: #eee;
 }
