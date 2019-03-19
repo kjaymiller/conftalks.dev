@@ -1,24 +1,24 @@
 Title: Frequently Asked Questions
 slug: faq
 
-This page hopes to answers all the questions you may have regarding the *Conftalks Project*
+## This page hopes to answers all the questions you may have regarding the *Conftalks Project*
 
-### What is ConfTalks?
+**What is ConfTalks?**<br>
 Conftalks is a notification platform designed to help developers find conferences that they would be interested in attending and giving talks to. 
 
-### Is it free?
+**Is it free?**<br>
 Currently it is free for developers. In the future, there may be a premium tier, but we do not plan to restrict information to you behind a paywall.
 
-### Is it supported?
+**Is it supported?**<br>
 It is currently supported by [Jay Miller](https://kjaymiller.com) a developer/automator. 
 
-### Does it plan to make money?
+**Does it plan to make money?**<br>
 Yes our plan is to charge Conferences a reasonable amount in order to maintain funding for it. 
 
-### Is it open-source?
+**Is it open-source?**<br>
 At the present time there isn't plans to open-source this platform completely.
 
-### How far into development is it?
+**How far into development is it?**<br>
 We are currently in Pre-Alpha Release. You can view our [Development Roadmap Here](https://www.notion.so/productivityintech/FAQ-Page-bcb92337db0240eb87304b88037f3f53#8a25b78d062e40c6a68c84b466aaa771)
 
 
