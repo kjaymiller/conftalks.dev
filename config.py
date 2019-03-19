@@ -20,4 +20,6 @@ DEFAULT_POST_BANNER = ''
 
 HEADER_LINKS = (
     Link(name='FAQ', url='/faq.html'),
+    Link(name='Developer Signup', url='/developer-signup.html'),
+    Link(name='Conference Signup', url='/conference-signup.html'),
 )
