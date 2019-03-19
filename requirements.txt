@@ -1,0 +1,16 @@
+-i https://pypi.org/simple
+--trusted-host pypi.org
+arrow==0.12.1
+certifi==2018.11.29
+click==7.0
+itsdangerous==1.1.0
+jinja2==2.10
+markdown==3.0.1
+markupsafe==1.1.0
+pathlib==1.0.1
+pipenv==2018.11.26
+python-dateutil==2.7.5
+six==1.11.0
+virtualenv-clone==0.4.0
+virtualenv==16.1.0
+werkzeug==0.14.1

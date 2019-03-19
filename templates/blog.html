@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Blog Post{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/css/blog.css">
+{% endblock %}
+{% block content %} 
+<div class="container">
+    <article>
+        <div class="row">
+            {% if metadata.image %}
+            <img src="{{metadata.image}}" class="featured_image">
+            {% endif %}
+            <h1 class="text-primary">{{metadata.title}}</h1>
+        </div>
+        <small class="text-secondary">{{metadata.author}} - <span
+               class="text-primary">{{metadata.date_published}}</span></small>
+        <div class="py-2">
+            {{metadata.markup}} 
+        </div>
+    </article>
+
+    <a href="./blog_0.html" class="text-primary"><-- Back to Blogs</a>
+</div>
+{% endblock %}
