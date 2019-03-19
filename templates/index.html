@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+{% extends 'base.html'%}
+{% block title%}{{config.SITE_TITLE}}{% endblock%}
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="/index.css">
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+{% endblock %}
 
-    <title>ConfTalks.Dev is Coming Soon</title>
-  </head>
+{% block content%}
     <div class="container">
 
     <div class="my-3 mx-3 navbar">
@@ -98,15 +94,7 @@
           </div>
         </div>
     </div>
-        <footer class="mt-3 footer jumbotron jumbrotron">
-          <div class="container text-center">
-            </b>Conftalks</b> is a project by <a
-               href="https://kjaymiller.com">KJayMiller</a>
-            and <br>
-            <a href="https://productivityintech.com">Productivity in Tech</a>
-          </div>
-
-        </footer>
+    {% endblock %} 
 	  </div>
   </body
 
