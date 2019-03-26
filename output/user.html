@@ -1,0 +1,21 @@
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+	var config = {
+  headers:{'Authorization': 'Bearer keyOzyWXah5fdzUL1'}
+	};
+
+axios.get('https://api.airtable.com/v0/appuFBQpMhzKDXSHn/Developers/recermTi3cFIdtdCL' , config)
+
+.then(function (response) {
+    // handle success
+    var n = response.data.fields['Name'];
+    var name = document.createTextNode(n);
+    document.getElementById('greeting').appendChild(name);
+  })
+    </script>
+
+    <h1 id="greeting">Hello </h1>
+    
+    

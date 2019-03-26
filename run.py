@@ -23,4 +23,10 @@ for page in pages.pages:
 def index():
     return Page(template='index.html').html
 
+
+@writer(route='user.html')
+def user():
+    return Page(template='developer_page.html').html
+
 index()
+user()
