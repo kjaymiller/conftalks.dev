@@ -11,9 +11,13 @@ axios.get('https://api.airtable.com/v0/appuFBQpMhzKDXSHn/Developers/recermTi3cFI
 
     .then(function (response) {
 	// handle success
-	var n = response.data.fields['Name'];
-	var name = document.createTextNode(n);
+	var responseFields = response.data.fields;
+	var name = document.createTextNode(responseFields['Name']);
 	document.getElementById('greeting').appendChild(name);
+
+	var confs = responseFields['
+	    console.log(responseFields)
+
     })
 </script>
 <div class="container">
