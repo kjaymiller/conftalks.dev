@@ -2,24 +2,27 @@
 {% block content %}
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <script>
-	var config = {
-  headers:{'Authorization': 'Bearer keyOzyWXah5fdzUL1'}
-	};
+<script>
+    var config = {
+	headers:{'Authorization': 'Bearer keyOzyWXah5fdzUL1'}
+    };
 
 axios.get('https://api.airtable.com/v0/appuFBQpMhzKDXSHn/Developers/recermTi3cFIdtdCL' , config)
 
-.then(function (response) {
-    // handle success
-    var n = response.data.fields['Name'];
-    var name = document.createTextNode(n);
-    document.getElementById('greeting').appendChild(name);
-  })
-    </script>
-    <div class="container">
+    .then(function (response) {
+	// handle success
+	var n = response.data.fields['Name'];
+	var name = document.createTextNode(n);
+	document.getElementById('greeting').appendChild(name);
+    })
+</script>
+<div class="container">
 
     <div class="jumbotron">
-    <h1 id="greeting">Hello </h1>
+	<h1 id="greeting">Hello </h1>
     </div> 
-    </div>
-    {% endblock %}
+    <div class="card-deck">
+	<h2>Your Upcoming Conferences</h2>
+
+</div>
+{% endblock %}
