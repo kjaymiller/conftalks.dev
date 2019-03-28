@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
 
 axios.get('https://kgtdt0h7s2.execute-api.us-west-2.amazonaws.com/alpha-web/users')
@@ -10,6 +10,7 @@ axios.get('https://kgtdt0h7s2.execute-api.us-west-2.amazonaws.com/alpha-web/user
 	// handle success
 	var responseFields = response.data[0];
 	var name = document.createTextNode(responseFields['name']);
+	var tags = responseFields['Tags'];    
 	document.getElementById('greeting').appendChild(name);
 
 	//var confs = responseFields['
@@ -24,6 +25,11 @@ axios.get('https://kgtdt0h7s2.execute-api.us-west-2.amazonaws.com/alpha-web/user
     </div> 
     <div id="tag-list" class="">
 	<h4>Tags:</h4>
+	<ul id="tag-list">
+  <li v-for="tag in tags">
+    {{ tag }}
+  </li>
+</ul>
     </div>
     <div class="card-deck">
 	<h2>Your Upcoming Conferences</h2>
