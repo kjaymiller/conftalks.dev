@@ -5,6 +5,9 @@
 <script>
 
 var data = { };
+    vm = new Vue({
+    	data:data	
+    })
 
 axios.get('https://api.conftalks.dev/web/users')
     .then(function (response) {
@@ -15,9 +18,6 @@ axios.get('https://api.conftalks.dev/web/users')
 	//var confs = responseFields['
 	});
     
-    vm = new Vue({
-    	data:data	
-    })
 </script>
 <div class="container">
 
