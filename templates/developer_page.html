@@ -18,8 +18,8 @@ axios.get('https://api.conftalks.dev/web/users')
     .then(function (response) {
 	// handle success
 	var responseFields = response.data[0];
-	vmGreeting = responseFields['name'];
-	vmTags.tags = responseFields['Tags'];    
+	vmGreeting.data.name = responseFields['name'];
+	vmTags.data.Tags = responseFields['Tags'];    
 	//var confs = responseFields['
 	});
     
