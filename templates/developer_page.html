@@ -12,8 +12,6 @@ axios.get('https://api.conftalks.dev/web/users')
 	var responseFields = response.data[0];
 	data.name = document.createTextNode(responseFields['name']);
 	data.tags = responseFields['Tags'];    
-	document.getElementById('greeting').appendChild(name);
-
 	//var confs = responseFields['
 	    console.log(tags)
 	});
@@ -25,7 +23,7 @@ axios.get('https://api.conftalks.dev/web/users')
 <div class="container">
 
     <div class="jumbotron">
-	<h1 id="greeting">Hello </h1>
+	<h1 id="greeting">Hello {name} </h1>
     </div> 
     <div id="" class="">
 	<h4>Tags:</h4>
