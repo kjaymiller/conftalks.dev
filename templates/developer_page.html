@@ -2,10 +2,9 @@
 {% block content %}
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<div class="container">
 <script>
     vmGreeting = new Vue({
-    	el: 'greeting',
+    	el: '#greeting',
       text: "Hello 👋"
     })
     
@@ -20,6 +19,7 @@ axios.get('https://api.conftalks.dev/web/users')
 	});
     
 </script>
+<div class="container">
     <div id="greeting" class="jumbotron">
       <h1 > {{ "{{ text }}" }} </h1>
     </div> 
