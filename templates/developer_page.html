@@ -4,23 +4,24 @@
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
 
-data(){
+var data = { };
+
 axios.get('https://api.conftalks.dev/web/users')
     .then(function (response) {
 	// handle success
 	var responseFields = response.data[0];
-	var name = document.createTextNode(responseFields['name']);
-	var tags = responseFields['Tags'];    
+	data.name = document.createTextNode(responseFields['name']);
+	data.tags = responseFields['Tags'];    
 	document.getElementById('greeting').appendChild(name);
 
 	//var confs = responseFields['
 	    console.log(tags)
-
-	return {
-		tags: tags
-		}
 	})
     };
+    
+    vm = new Vue({
+    	data:data	
+    })
 </script>
 <div class="container">
 
