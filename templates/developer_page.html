@@ -13,8 +13,8 @@ axios.get('https://api.conftalks.dev/web/users')
     .then(function (response) {
 	// handle success
 	var responseFields = response.data[0];
-	data.name = document.createTextNode(responseFields['name']);
-	data.tags = responseFields['Tags'];    
+	vm.name = document.createTextNode(responseFields['name']);
+	vm.tags = responseFields['Tags'];    
 	//var confs = responseFields['
 	});
     
