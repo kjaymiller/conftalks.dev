@@ -33,7 +33,7 @@ def user():
                 })""",
         'text': '{{text}}'}
         
-    return Page(template='developer_page.html', ).html
+    return Page(template='developer_page.html', vmGreeting=vmGreeting).html
 
 index()
 user()
