@@ -5,12 +5,12 @@
 <div class="container">
 <script>
     vmGreeting = new Vue({
-    	el: '#greeting',
+    	el: 'greeting',
       text: "Hello 👋"
     })
     
 	vmTags = new Vue({
-    	el: '#tag-list',
+    	el: 'tag-list',
     	text: 'Loading Tags 🔖'
     })
     
@@ -20,8 +20,8 @@ axios.get('https://api.conftalks.dev/web/users')
 	});
     
 </script>
-    <div class="jumbotron">
-      <h1 id="greeting"> {{ "{{ vmGreeting.text }}" }} </h1>
+    <div id="greeting" class="jumbotron">
+      <h1 > {{ "{{ text }}" }} </h1>
     </div> 
     <div id="tag-list" class="">
 	<h4>Tags:</h4>
