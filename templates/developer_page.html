@@ -5,12 +5,12 @@
 <script>
 
     vmGreeting = new Vue({
-    	el: '#greeting',
+    	el: '#vmGreeting',
     	data: {name: "Hello 👋",}
     })
     
 	vmTags = new Vue({
-    	el: '#tag-list',
+    	el: '#vmTags',
     	data: {Tags: ['Loading Tags 🔖']}
     })
     
@@ -31,7 +31,7 @@ axios.get('https://api.conftalks.dev/web/users')
     </div> 
     <div id="vmTags" class="">
 	<h4>Tags:</h4>
-	<ul id="tag-list">
+	<ul id="">
   <li v-for="tag in Tags">
     { tag }
   </li>
