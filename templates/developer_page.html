@@ -4,8 +4,8 @@
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
 
+data(){
 axios.get('https://api.conftalks.dev/web/users')
-
     .then(function (response) {
 	// handle success
 	var responseFields = response.data[0];
@@ -16,13 +16,13 @@ axios.get('https://api.conftalks.dev/web/users')
 	//var confs = responseFields['
 	    console.log(tags)
 
-
-	var app = new Vue({
-		data: {
-			el: '#tag-list', 
-			object: tags
+	return {
+		tags: tags
 		}
 	});
+
+
+
     })
 </script>
 <div class="container">
