@@ -26,7 +26,14 @@ def index():
 
 @writer(route='user.html')
 def user():
-    return Page(template='developer_page.html').html
+    vmGreeting = {
+        'script': """vmGreeting = new Vue({
+    	        el: '#vmGreeting',
+                text: {"Hello 👋"}
+                })""",
+        'text': '{{text}}'}
+        
+    return Page(template='developer_page.html', ).html
 
 index()
 user()

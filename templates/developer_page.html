@@ -4,12 +4,8 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
 
-    vmGreeting = new Vue({
-    	el: '#vmGreeting',
-      text: {"Hello 👋"},
-      delimiters: ['[[',']]']
-    })
-    
+  {{vmGreeting['script]}} 
+
 	vmTags = new Vue({
     	el: '#vmTags',
     	data: {
@@ -35,7 +31,7 @@ axios.get('https://api.conftalks.dev/web/users')
 <div class="container">
 
     <div class="jumbotron">
-      <h1 id="vmGreeting"> [[ text ]] </h1>
+      <h1 id="vmGreeting"> {{vmGreeting['text']}} </h1>
     </div> 
     <div id="vmTags" class="">
 	<h4>Tags:</h4>
