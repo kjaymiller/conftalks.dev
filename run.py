@@ -31,7 +31,7 @@ def user():
     	        el: '#vmGreeting',
                 text: {"Hello 👋"}
                 })""",
-        'text': '{{text}}'}
+        }
         
     return Page(template='developer_page.html', vmGreeting=vmGreeting).html
 
