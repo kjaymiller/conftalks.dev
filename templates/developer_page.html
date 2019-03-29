@@ -27,13 +27,13 @@ axios.get('https://api.conftalks.dev/web/users')
 <div class="container">
 
     <div class="jumbotron">
-	<h1 id="vmGreeting">Hello {name} </h1>
+	<h1 id="vmGreeting">Hello { name } </h1>
     </div> 
     <div id="vmTags" class="">
 	<h4>Tags:</h4>
 	<ul id="tag-list">
-  <li v-for="tag in tags">
-    {{ tag }}
+  <li v-for="tag in Tags">
+    { tag }
   </li>
 </ul>
     </div>
