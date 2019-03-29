@@ -6,13 +6,12 @@
 <script>
     vmGreeting = new Vue({
     	el: '#greeting',
-    	data: {
-        text: "Hello 👋",}
+      text: "Hello 👋"
     })
     
 	vmTags = new Vue({
     	el: '#tag-list',
-    	data: {text: ['Loading Tags 🔖']}
+    	text: 'Loading Tags 🔖'
     })
     
 axios.get('https://api.conftalks.dev/web/users')
