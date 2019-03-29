@@ -6,7 +6,8 @@
 
     vmGreeting = new Vue({
     	el: '#vmGreeting',
-      text: {"Hello 👋",}
+      text: {"Hello 👋"},
+      delimiters: ['[[',']]']
     })
     
 	vmTags = new Vue({
@@ -14,7 +15,8 @@
     	data: {
         tags: [
           { text: 'Loading Tags 🔖'}]
-      }
+      },
+      delimiters: ['[[',']]']
     })
     
 axios.get('https://api.conftalks.dev/web/users')
@@ -33,13 +35,13 @@ axios.get('https://api.conftalks.dev/web/users')
 <div class="container">
 
     <div class="jumbotron">
-      <h1 id="vmGreeting"> \{\{ text \}\} </h1>
+      <h1 id="vmGreeting"> [[ text ]] </h1>
     </div> 
     <div id="vmTags" class="">
 	<h4>Tags:</h4>
 	<ul id="">
   <li v-for="tag in Tags">
-    \{\{ tag.text \}\}
+    [[ tag.text ]] 
   </li>
 </ul>
     </div>
