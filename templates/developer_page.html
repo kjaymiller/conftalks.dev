@@ -3,17 +3,30 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <div class="container">
-
+<script>
+    vmGreeting = new Vue({
+    	el: '#greeting',
+    	data: {
+        text: "Hello 👋",}
+    })
+    
+	vmTags = new Vue({
+    	el: '#tag-list',
+    	data: {text: ['Loading Tags 🔖']}
+    })
+    
+axios.get('https://api.conftalks.dev/web/users')
+    .then(function (response) {
+	var responseFields = response.data[0];
+	});
+    
+</script>
     <div class="jumbotron">
-      <h1 id="vmGreeting"> {{ "{{ vmGreeting['text'] }}" }} </h1>
+      <h1 id="vmGreeting"> {{ "{{ vmGreeting.text }}" }} </h1>
     </div> 
     <div id="vmTags" class="">
 	<h4>Tags:</h4>
-	<ul id="">
-  <li v-for="tag in Tags">
-    [[ tag.text ]] 
-  </li>
-</ul>
+  {{"{{ text }}"}} 
     </div>
     <div class="card-deck">
 	<h2>Your Upcoming Conferences</h2>
