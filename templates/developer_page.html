@@ -4,21 +4,22 @@
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
 
-var data = {
-	name: "Hello 👋",
-	Tags: "['Loading Tags 🔖']"
-};
-    vm = new Vue({
-    	el: '.container',
-    	data:data	
+    vmGreeting = new Vue({
+    	el: '#greeting',
+    	data: {name: "Hello 👋",}
     })
-
+    
+	vmTags = new Vue({
+    	el: '#tag-list',
+    	data: {Tags: ['Loading Tags 🔖']}
+    })
+    
 axios.get('https://api.conftalks.dev/web/users')
     .then(function (response) {
 	// handle success
 	var responseFields = response.data[0];
-	vm.name = document.createTextNode(responseFields['name']);
-	vm.tags = responseFields['Tags'];    
+	vmGreeting = responseFields['name']);
+	vmTlags.tags = responseFields['Tags'];    
 	//var confs = responseFields['
 	});
     
