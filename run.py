@@ -24,16 +24,4 @@ def index():
     return Page(template='index.html').html
 
 
-@writer(route='user.html')
-def user():
-    vmGreeting = {
-        'script': """vmGreeting = new Vue({
-    	        el: '#vmGreeting',
-                text: {"Hello 👋"}
-                })""",
-        }
-        
-    return Page(template='developer_page.html', vmGreeting=vmGreeting).html
-
 index()
-user()
